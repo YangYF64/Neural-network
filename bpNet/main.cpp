@@ -229,7 +229,7 @@ int main() {
     
     double final_accuracy = static_cast<double>(total_correct) / test_inputs.size();
     
-    // --- 7. 输出测试结果（中文）---
+    // --- 7. 输出测试结果 ---
     std::cout << "\n--- 测试集评估结果 ---" << std::endl;
     std::cout << " - 测试样本总数: " << test_inputs.size() << std::endl;
     std::cout << " - 正确预测数量: " << total_correct << std::endl;
@@ -506,4 +506,5 @@ int main() {
 //     }
     
 //     return true;
+
 // }
