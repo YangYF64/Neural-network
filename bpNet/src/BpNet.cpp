@@ -59,7 +59,7 @@ void bpNet::init() {
 
 // --- 快速Sigmoid函数 ---
 inline double bpNet::sigmoid(double z) const {
-    // 精确计算版本（避免近似带来的精度问题）
+    // 精确计算（避免近似带来的精度问题）
     return 1.0 / (1.0 + std::exp(-z));
 }
 
@@ -187,4 +187,5 @@ double bpNet::get_loss(const std::vector<double>& t_data) const {
         loss += diff * diff;
     }
     return loss * 0.5;
+
 }
